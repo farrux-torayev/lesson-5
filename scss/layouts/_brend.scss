@@ -1,0 +1,44 @@
+.brend {
+  padding: 68px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__image {
+    padding: 58px 106px;
+  }
+}
+.border-right{
+    border-right: 1px solid #e6e8ec;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #e6e8ec;
+}
+
+@include mobile() {
+  .brend {
+    &__wrapper {
+      padding: 0 100px;
+      grid-template-columns: 1fr;
+    }
+    &__image {
+      padding: 38px 96px 0 0;
+      img {
+        width: 33%;
+        display: block;
+      }
+    }
+    &__image1{
+      display: none;
+    }
+
+
+  }
+  .border-right{
+    border-right: none;
+  }
+  .border-bottom-mobile{
+    border-bottom: 1px solid #e6e8ec;
+}
+}

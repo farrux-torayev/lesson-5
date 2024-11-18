@@ -1,0 +1,125 @@
+.hero {
+  &__image {
+    position: relative;
+    top: -712px;
+    z-index: -1;
+    border-radius: 30px;
+  }
+  &__gradent {
+    border-radius: 30px;
+  }
+  &__sub-wrapper {
+    position: relative;
+    bottom: 220px;
+    height: 776px;
+  }
+  &__info {
+    text-align: center;
+    position: relative;
+    width: 550px;
+    height: 216px;
+    top: 167px;
+    left: 365px;
+    z-index: 2;
+  }
+  &__button {
+    width: 182px;
+    height: 48px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 90px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    background: #3b71fe;
+    color: white;
+    border: 1px solid #3b71fe;
+  }
+  &__title {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+    padding-bottom: 12px;
+  }
+  &__sub-title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    padding-bottom: 24px;
+  }
+  &__wrapper-mobile{
+    display: none;
+  }
+}
+@include mobile() {
+  .hero {
+    &__wrapper{
+      padding: 0 100px;
+    }
+    &__wrapper-mobile {
+      display: block;
+      position: relative;
+      bottom: 220px;
+      height: 776px;
+      margin: auto;
+    }
+    &__image-mobile {
+      position: relative;
+      top: -489px;
+      z-index: -1;
+      border-radius: 30px;
+    }
+    &__gradent-mobile {
+      border-radius: 30px;
+    }
+    &__wrapper-mobile {
+      position: relative;
+      bottom: 220px;
+      height: 776px;
+    }
+    &__info-mobile {
+      text-align: center;
+      position: relative;
+      top: 321px;
+      left: -372px;
+      z-index: 2;
+    }
+    &__button-mobile {
+      width: 182px;
+      height: 48px;
+      padding: 16px 24px 16px 24px;
+      border-radius: 90px;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      background: #3b71fe;
+      color: white;
+      border: 1px solid #3b71fe;
+    }
+    &__title-mobile {
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 96px;
+      letter-spacing: -0.02em;
+      padding-bottom: 12px;
+    }
+    &__sub-title {
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      padding-bottom: 24px;
+    }
+    &__sub-wrapper {
+      display: none;
+    }
+    &__info{
+      display: none;
+    }
+  }
+}
